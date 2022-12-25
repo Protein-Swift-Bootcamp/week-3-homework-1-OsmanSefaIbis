@@ -8,7 +8,7 @@
 import UIKit
 
 protocol LabelChangedDelegate: AnyObject{
-    func DidChanged(_ id: String?,_ name: String?,_ city: String?)
+    func DidChanged(_ id: String?,_ name: String?)
 }
 
 class EditVC: UIViewController {
@@ -17,6 +17,9 @@ class EditVC: UIViewController {
     @IBOutlet weak var nameLabel: UITextField!
     @IBOutlet weak var cityLabel: UITextField!
     
+    
+    var changeHandler: ((String?) -> ())?
+    
     weak var delegate: LabelChangedDelegate?
     
     override func viewDidLoad() {
@@ -24,8 +27,9 @@ class EditVC: UIViewController {
     }
 
     @IBAction func submitTapped(_ sender: Any) {
-        delegate?.DidChanged(identificationLabel.text, nameLabel.text, cityLabel.text)
+        delegate?.DidChanged(identificationLabel.text, nameLabel.text)
+        changeHandler?(cityLabel.text)
         dismiss(animated: true)
     }
-
+    
 }
