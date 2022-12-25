@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var identificationLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func editButtonTapped(_ sender: Any) {
+        performSegue(withIdentifier: "ToEditVC", sender: nil)
+    }
+    
+    
 }
 
