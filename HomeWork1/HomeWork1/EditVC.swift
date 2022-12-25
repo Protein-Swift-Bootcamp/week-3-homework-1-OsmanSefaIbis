@@ -7,27 +7,25 @@
 
 import UIKit
 
+protocol LabelChangedDelegate: AnyObject{
+    func DidChanged(_ id: String?,_ name: String?,_ city: String?)
+}
+
 class EditVC: UIViewController {
 
-    @IBOutlet weak var identificationTextField: UITextField!
-    @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var identificationLabel: UITextField!
+    @IBOutlet weak var nameLabel: UITextField!
+    @IBOutlet weak var cityLabel: UITextField!
+    
+    weak var delegate: LabelChangedDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func submitTapped(_ sender: Any) {
+        delegate?.DidChanged(identificationLabel.text, nameLabel.text, cityLabel.text)
+        dismiss(animated: true)
     }
-    */
 
 }

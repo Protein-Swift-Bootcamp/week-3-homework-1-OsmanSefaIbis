@@ -12,7 +12,8 @@
 		96E200542957863A00A09C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E200522957863A00A09C33 /* Main.storyboard */; };
 		96E200562957863B00A09C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E200552957863B00A09C33 /* Assets.xcassets */; };
 		96E200592957863B00A09C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E200572957863B00A09C33 /* LaunchScreen.storyboard */; };
-		96E200632958A1F400A09C33 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E200622958A1F400A09C33 /* EditVC.swift */; };
+		96E2006E2958DCC900A09C33 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E2006C2958DCC900A09C33 /* EditVC.swift */; };
+		96E2006F2958DCC900A09C33 /* EditVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96E2006D2958DCC900A09C33 /* EditVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		96E200552957863B00A09C33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E200582957863B00A09C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E2005A2957863B00A09C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		96E200622958A1F400A09C33 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		96E2006C2958DCC900A09C33 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
+		96E2006D2958DCC900A09C33 /* EditVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				96E2004C2957863A00A09C33 /* AppDelegate.swift */,
 				96E200502957863A00A09C33 /* ViewController.swift */,
-				96E200622958A1F400A09C33 /* EditVC.swift */,
+				96E2006C2958DCC900A09C33 /* EditVC.swift */,
 				96E200522957863A00A09C33 /* Main.storyboard */,
+				96E2006D2958DCC900A09C33 /* EditVC.xib */,
 				96E200552957863B00A09C33 /* Assets.xcassets */,
 				96E200572957863B00A09C33 /* LaunchScreen.storyboard */,
 				96E2005A2957863B00A09C33 /* Info.plist */,
@@ -127,6 +130,7 @@
 			files = (
 				96E200592957863B00A09C33 /* LaunchScreen.storyboard in Resources */,
 				96E200562957863B00A09C33 /* Assets.xcassets in Resources */,
+				96E2006F2958DCC900A09C33 /* EditVC.xib in Resources */,
 				96E200542957863A00A09C33 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E200512957863A00A09C33 /* ViewController.swift in Sources */,
-				96E200632958A1F400A09C33 /* EditVC.swift in Sources */,
+				96E2006E2958DCC900A09C33 /* EditVC.swift in Sources */,
 				96E2004D2957863A00A09C33 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
